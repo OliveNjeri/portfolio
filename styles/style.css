@@ -1,0 +1,269 @@
+:root{
+    --primary-color:#707070;
+    --head-color:#1976D2;
+    --background-color:#333333;
+    --post-color:#879c99;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html ,body{
+    scroll-behavior: smooth;
+    background: #333333;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:var(--primary-color);
+    overflow-x: hidden;
+}
+.container{
+    margin-left: 50px;
+    
+}
+.header{
+    display:flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin:0px 20px 0 70px;
+}
+.fa{
+    color: red !important;
+}
+/*img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba( 0,0 ,0, 0.2), 0 6px 20px 0 rgba( 0,0 ,0, 0.19);
+} */
+ .img-bio{
+    height: 250px;
+    margin-left: 50px;
+    width: 250px;
+    border-radius: 50%;
+}
+.text-bio h2{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 0;
+   
+}
+.text-bio h3 {
+    color: #fff;
+}
+h1, h2{
+    color: var(--head-color);
+}
+h3, h2{
+    color: #879c99;
+    letter-spacing: 1px;  
+}
+.name{
+    font-size:2em;
+    font-family:arial;
+}
+.icon{
+    width: 50px;
+    margin: 20px 20px 0;
+    height: 50px;
+    padding: 10px; 
+    border-radius: 50%; 
+}
+ 
+.text-bio{
+    margin-top:70px ;
+    margin-right: 80px;
+    line-height: 2em;
+}
+/*info-section*/
+.info-section{
+    margin-left:50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+nav{
+    padding: 20px;
+    display: block;
+    margin-left:60px; 
+    box-shadow: 0 4px 8px 0 rgba( 0,0 ,0, 0.2), 0 6px 20px 0 rgba( 0,0 ,0, 0.19);
+    line-height: 2em;
+    position: relative;
+    color: white;
+    width: 200px;
+} 
+
+ul{
+    
+     padding: 25px;
+}
+.navigation ul a{
+    list-style-type: none;  
+    padding: 15px;
+    text-transform: uppercase;
+    color:var(--post-color)
+}
+ 
+a{
+    text-decoration: none;    
+}
+a{
+    color:var(--post-color);
+}
+ .navigation li:hover{
+    color:var(--head-color);
+    border-bottom: 1px solid var(--primary-color);
+    transition: 2s;
+}
+.main-info{
+    padding-left: 90px;
+    margin-right: 250px;
+    line-height: 2em;
+}
+
+/*icons sidebar */
+
+.left-sidebar, i{
+    display: block;
+    font-size: 40px;
+    line-height: 1.5em;  
+}
+.vertical{
+    margin-left: 15px;
+    border-left: 2px solid var(--primary-color);
+    height: 100px;    
+}
+ .fab{
+    color: var(--head-color);
+    margin-right: 70px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba( 0,0 ,0, 0.2), 0 6px 20px 0 rgba( 0,0 ,0, 0.19);
+}
+.main{
+    font-size: 2em;
+    color: var(--head-color);
+}
+.int{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.right-sidebar {
+    line-height: 2em;
+}
+.right-sidebar .mosse{
+    margin-top: 70px;
+}
+.right-sidebar .stem{
+    margin-top: 15px;
+}
+.right-sidebar .shehacks{
+    margin-top: 15px;
+}
+.display{
+    margin-top: 10px;
+    display: flex;  
+     
+}
+.display img{
+    padding: 50px;
+    opacity: 0.5;
+}
+.dropdown, a{
+    text-align: center;
+    color: var(--head-color);
+}
+
+.bottom{
+    content: " ";
+    height: 1px;
+    width: 1400px;
+    background-color: var(--primary-color);
+    margin-left: 70px;
+    margin-top: 70px;
+} 
+ 
+.project-container{
+    margin-left: 150px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+ .work-info-head{
+     color: var(--head-color);
+    text-align: center;
+    margin-top: 15px;
+}
+.project-info{
+    margin-right: 70px;
+    line-height: 2em;
+}
+.project-info ul{
+    color: var(--post-color);
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-info ul li{
+    margin-left: 20px;
+    width: 200px;
+}
+.myprojects-container{
+    margin-left: 150px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+ /*media queries*/
+ /* Mobile */
+ @media screen and (max-width:720px){
+     /*{
+         margin: 0;
+         padding: 0;
+     }
+     .header, .info-section, .int, .project-container, .project-info ul,.myprojects-container{
+         display: block;
+         margin: 0;
+         padding: 0  
+     }
+     .img-bio{
+       width: 150px;
+       height: 150px;
+       margin-left: 120px;
+     }
+     nav{
+         height: 150px;
+         width: 100px
+     }
+     .icons{
+         margin-left: 120px;
+     }
+     .icon{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        padding: 0px;  
+    }
+    .name {
+        font-size: 20px;
+        margin-left: 110px;
+    }
+     h2{
+         margin-left: 75px;
+     }
+     h3{
+        margin-left: 20px;
+     }
+     .main-info{
+         padding: 0;
+         margin: 0;
+     }
+     .left-sidebar{
+         visibility: hidden;
+     }
+     ul{
+         width: 100px;
+     }
+     
+     .bottom{
+          width: 200px;
+     }
+ } */
